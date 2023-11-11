@@ -1,0 +1,38 @@
+<!--index.html-->
+<html>
+  <body>
+    <div id="app"></div>
+    <!-- unique ID given to target this div later -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- ###################### -->
+    <!-- imperative JavaScript code -->
+    <!-- ###################### -->
+    <!-- <script type="text/javascript">
+        //  to write JavaScript inside the HTML file 
+        // inside the <script> tag, DOM methods can be used
+        const app = document.getElementById('app'); // get the div with id="app"
+
+        // const header = document.createElement('h1'); // create a new h1 element
+        // const headerContent = document.createTextNode('Develop. Preview. Ship. 🚀',); // create a text node
+        // header.appendChild(headerContent); // append the text node to the h1 element
+        // app.appendChild(header); // append the h1 element to the div with id="app"
+
+        // ReactDom.render(<h1>Develop. Preview. Ship. 🚀</h1>, app) // tell react-dom to render <h1> title inside #app element     
+    </script> -->
+
+    <!-- ###################### -->
+    <!-- declarative React code -->
+    <!-- ###################### -->
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+      ReactDOM.render(<>
+      <h1>Shadhi's Coding Playround:</h1>
+      <h2> Blogging the Spadework of Software Engineering</h2>
+      </>, app);
+    </script>
+  </body>
+</html>
