@@ -27,6 +27,7 @@ on:
       - "!CUSTOMIZE.md"
       - "!FAQ.md"
       - "!INSTALL.md"
+      - "!README_t.md"
       - "!README.md"
   pull_request:
     branches:
@@ -54,6 +55,7 @@ on:
       - "!CUSTOMIZE.md"
       - "!FAQ.md"
       - "!INSTALL.md"
+      - "!README_t.md"
       - "!README.md"
   workflow_dispatch:
 
@@ -66,6 +68,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
+        # Checkout the repository code into the workflow's runner and
+        # ensure the job has access to the repository's files.
         uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -73,6 +77,7 @@ jobs:
           ruby-version: "3.2.2"
           bundler-cache: true
       - name: Update _config.yml ⚙️
+        # Update giscus.repo value using github.repository value from another YAML file without committing changes
         uses: fjogeleit/yaml-update-action@main
         with:
           commitChange: false
@@ -89,6 +94,7 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
+        # Deploy the contents of the _site directory to GitHub Pages; gh-pages branch
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:

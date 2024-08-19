@@ -45,8 +45,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Link Checker 🔗
+        # Check for broken links in markdown and html files
         uses: lycheeverse/lychee-action@v1.9.0
         with:
-          fail: true
+          fail: true # Makes the step fail if any broken links are found
           # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: --user-agent 'curl/7.54' --exclude-path README_t.md --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'

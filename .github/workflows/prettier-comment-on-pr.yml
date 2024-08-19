@@ -1,4 +1,5 @@
 name: Comment on pull request
+# Comment on a pull request when Prettier check fails.
 
 on:
   repository_dispatch:

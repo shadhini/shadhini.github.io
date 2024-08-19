@@ -1,4 +1,5 @@
 name: Docker Slim
+# Slim down an existing Docker image using Docker Slim
 
 #Only trigger, when the build workflow succeeded
 on:
@@ -12,11 +13,6 @@ on:
     workflows: ["Docker Image CI"]
     types:
       - completed
-
-# on:
-#   push:
-#     branches:
-#       - 'master'
 
 jobs:
   build:

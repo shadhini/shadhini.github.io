@@ -1,4 +1,5 @@
 name: Prettier code formatter
+# Automatically format code using Prettier, ensuring consistent code style across the project.
 
 on:
   pull_request:
@@ -42,6 +43,8 @@ jobs:
           retention-days: 7
       - name: Dispatch information to repository 🗣️
         if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
+        # If the Prettier check fails on a pull request, this step sends a custom repository dispatch event.
+        # This event can be used to trigger further workflows or actions.
         uses: peter-evans/repository-dispatch@v2
         with:
           event-type: prettier-failed-on-pr

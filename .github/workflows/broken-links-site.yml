@@ -39,8 +39,9 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Link Checker 🔗
+        # Check only local links within the Jekyll site's HTML files
         uses: lycheeverse/lychee-action@v1.9.0
         with:
-          fail: true
-          # only check local links
+          fail: true # Makes the step fail if any broken links are found
+          # only check local links (--offline)
           args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'

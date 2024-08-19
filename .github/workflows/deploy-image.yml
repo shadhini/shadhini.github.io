@@ -1,4 +1,6 @@
 name: Docker Image CI
+# Build and push Docker images when changes are made to specific files in the master or main branches
+# if the repository owner is `alshedivat`
 
 on:
   push:
