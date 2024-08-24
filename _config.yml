@@ -134,9 +134,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Tech Insights with Shadhini # blog_name will be displayed in your blog page
-blog_description: Welcome to my blog, where I share insights, experiences, and tips from the world of software engineering. 
-  From coding tutorials and project showcases to industry trends and personal reflections, 
-  you'll find a variety of content designed to inspire and inform. 
+blog_description: Welcome to my blog, where I share insights, experiences, and tips from the world of software engineering.
+  From coding tutorials and project showcases to industry trends and personal reflections,
+  you'll find a variety of content designed to inspire and inform.
   Join me as I explore new technologies, tackle programming challenges, and document my journey in the tech industry.
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
