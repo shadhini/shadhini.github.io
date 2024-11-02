@@ -2,11 +2,11 @@
   "basics": {
     "name": "Shadhini Jayatilake",
     "label": "Software Engineer",
-    "image": "",
+    "image": "prof_pic.jpg",
     "email": "shadhini.jayatilake@gmail.com",
     "phone": "",
     "url": "https://shadhini.github.io",
-    "summary": "With a fervent enthusiasm for software engineering, I bring a proven track record of achievements in Open Banking, Blockchain, Automation, and Algorithm Development. Over the past five years, I have actively contributed to the dynamic realms of finance, weather forecasting, and disaster risk reduction. My work showcases a harmonious blend of technical expertise and a curiosity- driven approach to innovation, coupled with a fast-learning mindset. This ability to quickly grasp new concepts enhances my adaptability and contributes to my success in diverse projects.",
+    "summary": "With a fervent enthusiasm for software engineering, I bring a proven track record of achievements in Open Banking, Microservices, REST APIs, Algorithm Development, Automation, and Blockchain. Over the past five years, I have actively contributed to the dynamic realms of finance, weather forecasting, and disaster risk reduction. My work showcases a harmonious blend of technical expertise and a curiosity-driven approach to innovation, coupled with a fast-learning mindset. This ability to quickly grasp new concepts enhances my adaptability and contributes to my success in diverse projects.",
     "location": {
       "city": "Kurunegala",
       "countryCode": "SL",
@@ -29,8 +29,11 @@
       "studyType": "MSc in Computer Science and Engineering - Software Architecture Specialization (Reading)",
       "startDate": "2023-01",
       "endDate": "Present",
-      "score": "10",
-      "courses": ["Domain of ongoing Research : Blockchain, Weather Data"]
+      "score": "Pending",
+      "courses": ["Domain of ongoing Research : Blockchain, Weather Data", "Advanced Algorithms, Advanced Databases",
+        "Software Architecture Concepts, Enterprise Software Architecture, Rapid Application Development, Software Process and Management, Requirements Engineering, Software Quality",
+        "Distributed Computing, Cloud Technologies and Systems",
+        "Big Data Analytics Technologies, Machine Learning, Business Intelligence"]
     },
     {
       "institution": "Department of Computer Science & Engineering, Faculty of Engineering, University of Moratuwa, Sri Lanka",
@@ -40,8 +43,13 @@
       "studyType": "BSc. Eng. (Hons) in Computer Science and Engineering",
       "startDate": "2014-11",
       "endDate": "2018-12",
-      "score": "3.5",
-      "courses": ["Second Class - Upper Division", "Overall GPA : 3.50", "Dean’s list - Semester 8 (SGPA : 4.05)"]
+      "score": "Overall GPA: 3.5",
+      "courses": ["Second Class - Upper Division", "Overall GPA: 3.50", "Dean’s list - Semester 8 (SGPA: 4.05)",
+        "Distributed Systems, Concurrent Programming, Computer Security, Information Security & Cryptography",
+        "Machine Learning, Data Mining & Information Retrieval, Graph Theory for Computing",
+        "Data Structures and Algorithms, Advanced Algorithms",
+        "Object Oriented Programming, Object Oriented Software Development, Database Internals, Operating Systems, Computer Architecture",
+        "Research and Development Project"]
     },
     {
       "institution": "Maliyadeva Girls’ College, Kurunegala, Sri Lanka",
@@ -51,7 +59,7 @@
       "studyType": "G.C.E. Advanced Level, August 2013 – Physical Science Stream",
       "startDate": "2011-01",
       "endDate": "2013-12",
-      "score": "Z-score : 1.9899",
+      "score": "Z-score: 1.9899",
       "courses": ["Z-score : 1.9899", "Island rank : 698", "Physics : A", "Mathematics : A", "Chemistry : B"]
     },
     {
