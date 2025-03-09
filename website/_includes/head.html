@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Browser Tab Title -->
+    <title>
+        {% if page.url == "/" %}
+        {{ site.title }}
+        {% else %}
+        {{ site.title }} | {{ page.title }}
+        {% endif %}
+    </title>
+
+    <meta name="description" content="Shadhini Jayatilake's Personal Website">
+    <meta name="keywords" content="Shadhini Portfolio Resume Projects">
+
+    <!-- Favicons -->
+    {% include favicons.html %}
+
+    <!-- Stylesheets -->
+    {% include stylesheet.html %}
+
+</head>

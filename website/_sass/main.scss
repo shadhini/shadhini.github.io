@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+Font & Color Variables
+--------------------------------------------------------------*/
+// Fonts
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+// Global Colors - used throughout the website
+:root {
+  --background-color: #ffffff; // Background color
+  --default-color: #444444; // Default text color
+  --heading-color: #222222; // Headings, subheadings and title color
+  --accent-color: #34b7a7; // Accent color for brand
+  --surface-color: #ffffff; // Surface color - background of boxed elements (e.g: cards, icon boxes)
+  --contrast-color: #ffffff; // Contrast color
+}
+
+// Nav Menu Colors
+:root {
+  --nav-color: #444444;  // Default color of main navmenu links
+  --nav-hover-color: #34b7a7; // Hovered over or active main navmenu links color
+  --nav-mobile-background-color: #ffffff; // Background color for mobile navigation menu
+  --nav-dropdown-background-color: #ffffff; // Background color for dropdown items
+  --nav-dropdown-color: #444444; // Navigation links of the dropdown items color
+  --nav-dropdown-hover-color: #34b7a7; // Hovered over dropdown navigation links color
+}
+
+// Color Presets -  override global colors
+.light-background {
+  --background-color: #e9e8e6;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+General Styling & Shared Classes
+--------------------------------------------------------------*/
+
+// Smooth scroll
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
