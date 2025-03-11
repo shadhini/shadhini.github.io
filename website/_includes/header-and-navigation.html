@@ -1,7 +1,7 @@
 <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1 class="sitename">Shadhini</h1>
@@ -9,12 +9,12 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                {% for item in site.data.navigation %}
+                <li>
+                    <a class="{% if page.url == item.link %}active{% endif %}" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}
+                    </a>
+                </li>
+                {% endfor %}
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
