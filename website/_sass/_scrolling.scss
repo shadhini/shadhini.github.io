@@ -1,0 +1,20 @@
+// When navigating with the keyboard, prevent focus from landing behind the sticky header
+
+main {
+  section,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  [tabindex="0"] {
+    scroll-margin-top: 5rem;
+    scroll-margin-bottom: 150px;
+  }
+}
